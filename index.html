@@ -1,0 +1,169 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mack Construction Corp | Heavy Construction, NYC</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1e2226;--slate:#2b3137;--stone:#e9e3d9;--stone2:#d8cfc1;--accent:#c8873a;--mute:#7b7a75}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;color:var(--ink);background:#f6f3ee;font-weight:300;line-height:1.7}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.05}
+a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1280px;margin:0 auto;padding:0 48px}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:22px;display:block}
+.btn{display:inline-flex;align-items:center;gap:14px;padding:18px 30px;background:var(--accent);color:#fff;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;border:0;border-radius:0;cursor:pointer;transition:.3s}
+.btn:hover{background:var(--ink)}.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.5)}.btn.ghost:hover{background:#fff;color:var(--ink)}
+.arrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;display:inline-flex;gap:12px;align-items:center;border-bottom:1px solid currentColor;padding-bottom:6px}
+.arrow:after{content:"\2192";transition:.3s}.arrow:hover:after{transform:translateX(6px)}
+header{position:fixed;inset:0 0 auto 0;z-index:50;padding:22px 0;transition:.4s}
+header.s{background:rgba(30,34,38,.94);padding:12px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{height:44px;width:auto}nav{display:flex;gap:38px;align-items:center}
+nav a{color:#fff;font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}nav a:hover{opacity:1}
+nav .btn{padding:12px 22px;opacity:1}
+.hero{position:relative;height:100vh;min-height:640px;background:#111;color:#fff;overflow:hidden}
+.hero .sl{position:absolute;inset:0;opacity:0;transition:opacity 2.4s ease}.hero .sl.on{opacity:1}
+.hero .sl img{transform:scale(1.08);transition:transform 9s linear}.hero .sl.on img{transform:scale(1)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,23,26,.85),rgba(20,23,26,.35) 65%,rgba(20,23,26,.2)),linear-gradient(0deg,rgba(20,23,26,.6),transparent 40%)}
+.hero .c{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:110px}
+.hero h1{font-size:clamp(46px,7vw,104px);max-width:900px;margin-bottom:28px}.hero h1 em{color:var(--stone2)}
+.hero p{max-width:520px;font-size:18px;opacity:.85;margin-bottom:40px}.hero .ctas{display:flex;gap:16px;flex-wrap:wrap}
+.hero .meta{position:absolute;right:48px;bottom:110px;z-index:2;text-align:right;font-size:12px;letter-spacing:.22em;text-transform:uppercase;opacity:.7}
+section{padding:140px 0}
+.intro{display:grid;grid-template-columns:5fr 7fr;gap:90px;align-items:start}
+.intro h2{font-size:clamp(38px,4.4vw,64px)}.intro p{font-size:18px;color:#4a4b4a;margin-bottom:26px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--stone2);margin-top:50px}
+.facts div{padding:28px 0}.facts b{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:500;display:block;line-height:1}.facts span{font-size:13px;color:var(--mute)}
+.services{background:var(--stone)}
+.shead{display:flex;justify-content:space-between;align-items:end;margin-bottom:64px;gap:40px}.shead h2{font-size:clamp(38px,4.4vw,64px);max-width:640px}.shead p{max-width:380px;color:#55554f}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tile{position:relative;aspect-ratio:4/5;overflow:hidden;color:#fff;background:#333}
+.tile img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}.tile:hover img{transform:scale(1.08)}
+.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,23,26,.85),transparent 60%)}
+.tile .t{position:absolute;left:30px;right:30px;bottom:28px;z-index:2}.tile small{font-size:12px;letter-spacing:.2em;color:var(--stone2)}
+.tile h3{font-size:34px;margin:6px 0}.tile p{font-size:14px;opacity:.8}
+.proj{display:grid;grid-template-columns:7fr 5fr;gap:24px;grid-template-rows:auto auto}
+.proj .big{grid-row:span 2;aspect-ratio:4/3.6;overflow:hidden}.proj .sm{aspect-ratio:16/10;overflow:hidden}
+.proj figure{position:relative}.proj figcaption{position:absolute;left:0;bottom:0;background:#f6f3ee;padding:16px 24px 0 0;font-size:13px}
+.proj figcaption b{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;display:block}
+.process{background:var(--slate);color:#fff}.process .shead p{color:#b9b6ae}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.15)}
+.steps div{padding:40px 30px 0 0}.steps i{font-family:'Cormorant Garamond',serif;font-size:56px;color:var(--accent);font-style:normal}
+.steps h3{font-size:28px;margin:10px 0}.steps p{font-size:15px;color:#b9b6ae}
+.pat{display:grid;grid-template-columns:5fr 6fr;gap:100px;align-items:center}
+.pat .ph{aspect-ratio:4/5;overflow:hidden;position:relative}.pat .ph img{object-position:center 20%}
+.pat h2{font-size:clamp(38px,4.4vw,60px);margin-bottom:28px}.pat p{color:#4a4b4a;margin-bottom:20px}
+.pat blockquote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:28px;line-height:1.3;border-left:2px solid var(--accent);padding-left:26px;margin:34px 0}
+.sig{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.gtp{margin-top:30px;padding:22px 26px;background:var(--stone);font-size:14px}
+.testi{background:var(--stone)}.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tq{background:#f6f3ee;padding:44px 38px;position:relative}.tq p{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.35;margin-bottom:30px}
+.tag{position:absolute;top:16px;right:16px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;background:var(--accent);color:#fff;padding:4px 8px}
+.area{display:grid;grid-template-columns:6fr 6fr;gap:90px;align-items:center}.area h2{font-size:clamp(38px,4.4vw,60px);margin-bottom:24px}
+.area ul{list-style:none;border-top:1px solid var(--stone2);margin-top:30px}.area li{display:flex;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--stone2);font-family:'Cormorant Garamond',serif;font-size:26px}
+.area li span{font-family:Inter;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);align-self:center}
+.area .ph{aspect-ratio:1;overflow:hidden}
+.contact{background:var(--ink);color:#fff}.cgrid{display:grid;grid-template-columns:5fr 7fr;gap:90px}
+.contact h2{font-size:clamp(40px,5vw,72px);margin-bottom:28px}.contact .info{color:#b9b6ae;font-size:15px}.contact .info a{color:#fff;display:block;font-size:19px;margin:4px 0 20px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:28px 24px}form .f{grid-column:span 2}
+label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#9a978f;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.25);color:#fff;font:inherit;font-size:16px;padding:10px 0;border-radius:0;outline:none}
+select option{color:#000}input:focus,textarea:focus{border-color:var(--accent)}
+.demo{font-size:12px;color:#8a877f}
+footer{background:#15181b;color:#8f8c85;padding:60px 0 40px;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}footer .logo{height:36px}
+footer b{color:var(--accent);font-weight:500}
+.fu{opacity:0;transform:translateY(40px);transition:opacity 1s ease,transform 1s ease}.fu.in{opacity:1;transform:none}
+.ph-note{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.6);color:#fff;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:4px 8px;z-index:3}
+.burger{display:none;background:none;border:0;color:#fff;font-size:26px}
+@media(max-width:900px){.wrap{padding:0 22px}nav{display:none}.burger{display:block}section{padding:90px 0}
+.intro,.pat,.area,.cgrid,.proj{grid-template-columns:1fr;gap:44px}.grid,.tgrid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}
+.shead{flex-direction:column;align-items:start}.hero .meta{display:none}.hero .c{padding-bottom:70px}.proj .big{grid-row:auto}
+.tile{aspect-ratio:4/3.4}form{grid-template-columns:1fr}form .f{grid-column:auto}.facts b{font-size:32px}.logo{height:36px}}
+</style></head><body>
+<header id="hd"><div class="wrap"><a href="#"><img class="logo" src="logo.jpg" alt="Mack Construction Corp"></a>
+<nav><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#pat">Leadership</a><a class="btn" href="#contact">Request an Estimate</a></nav><button class="burger" aria-label="Menu">&#9776;</button></div></header>
+
+<section class="hero" style="padding:0">
+<div class="sl on"><img src="proj1.jpg" alt="Mack Construction crew and trucks on a night job in NYC"></div>
+<div class="sl"><img src="u5.jpg" alt=""></div><div class="sl"><img src="u1.jpg" alt=""></div><div class="sl"><img src="u2.jpg" alt=""></div>
+<div class="wrap c"><span class="eyebrow">Heavy Construction Contractor &middot; Est. 2012</span>
+<h1>Civil &amp; general construction, <em>built with integrity.</em></h1>
+<p>Delivering civil and general construction projects with integrity, safety and excellence. Serving NYC and all 5 Boroughs, NY State and New Jersey.</p>
+<div class="ctas"><a class="btn" href="#contact">Request an Estimate &rarr;</a><a class="btn ghost" href="#services">View Our Services</a></div></div>
+<div class="meta">Greenpoint, Brooklyn<br>New York</div></section>
+
+<section id="about"><div class="wrap intro">
+<div class="fu"><span class="eyebrow">Your Trusted Heavy Equipment Contractors</span><h2>From Brooklyn, for the five boroughs.</h2></div>
+<div class="fu"><p>Mack Construction Corp delivers superior civil and general construction services across New York City, the 5 Boroughs, New York State, and New Jersey.</p>
+<p>With a seasoned team of office staff, engineers, mechanics, operators, laborers and third-party contractors, we ensure seamless project execution with unwavering integrity, transparency and safety standards.</p>
+<a class="arrow" href="#pat">Meet our President</a>
+<div class="facts"><div><b>2012</b><span>Founded in Brooklyn</span></div><div><b>5</b><span>NYC Boroughs served</span></div><div><b>NY &amp; NJ</b><span>State and regional reach</span></div></div></div></div></section>
+
+<section class="services" id="services"><div class="wrap">
+<div class="shead fu"><div><span class="eyebrow">Our Specialized Services</span><h2>No job too large or too small.</h2></div><p>From large City and State highway and roadwork projects, to public schools and residential projects. Industrial, civil, commercial and private work.</p></div>
+<div class="grid">
+<a class="tile fu"><img src="u5.jpg" alt=""><div class="t"><small>01</small><h3>Excavation &amp; Hauling</h3><p>Site excavation, grading and material hauling.</p></div></a>
+<a class="tile fu"><img src="proj1.jpg" alt=""><div class="t"><small>02</small><h3>Heavy Equipment</h3><p>A modern, well-maintained fleet with experienced operators.</p></div></a>
+<a class="tile fu"><img src="u1.jpg" alt=""><div class="t"><small>03</small><h3>Concrete Cutting &amp; Drilling</h3><p>Precision cutting, coring and cement and concrete work.</p></div></a>
+<a class="tile fu"><img src="u8.jpg" alt=""><div class="t"><small>04</small><h3>Civil &amp; Roadwork</h3><p>City and State highway, roadwork, parks and underground utilities.</p></div></a>
+<a class="tile fu"><img src="u2.jpg" alt=""><div class="t"><small>05</small><h3>General Labor</h3><p>Skilled local crews for commercial, industrial and private projects.</p></div></a>
+<a class="tile fu"><img src="u4.jpg" alt=""><div class="t"><small>06</small><h3>Recycling &amp; Removal</h3><p>Demolition debris, recycling and responsible removal.</p></div></a>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<div class="shead fu"><div><span class="eyebrow">Featured Work</span><h2>Selected projects.</h2></div><a class="arrow" href="#contact">Discuss your project</a></div>
+<div class="proj">
+<figure class="big fu"><img src="proj1.jpg" alt=""><figcaption><b>Night utility work, NYC</b>Mack Construction crew on site</figcaption></figure>
+<figure class="sm fu"><img src="u5.jpg" alt=""><span class="ph-note">Placeholder project</span><figcaption><b>Project name</b>Borough, scope (to be supplied)</figcaption></figure>
+<figure class="sm fu"><img src="u1.jpg" alt=""><span class="ph-note">Placeholder project</span><figcaption><b>Project name</b>Borough, scope (to be supplied)</figcaption></figure>
+</div></div></section>
+
+<section class="process"><div class="wrap">
+<div class="shead fu"><div><span class="eyebrow">How We Work</span><h2>A clear process, start to finish.</h2></div><p>Experienced management supports every stage: bidding, site supervision, project management and equipment maintenance.</p></div>
+<div class="steps">
+<div class="fu"><i>01</i><h3>Consult &amp; Bid</h3><p>We review scope, drawings and site conditions and prepare a clear bid.</p></div>
+<div class="fu"><i>02</i><h3>Plan</h3><p>Scheduling, crew and equipment planning, coordination with city agencies.</p></div>
+<div class="fu"><i>03</i><h3>Build</h3><p>Supervised on-site execution with safety first, every shift.</p></div>
+<div class="fu"><i>04</i><h3>Deliver</h3><p>Completed on time and to the highest quality standards.</p></div>
+</div></div></section>
+
+<section id="pat"><div class="wrap pat">
+<div class="ph fu"><img src="proj2.jpg" alt="Pat Mackaronis"></div>
+<div class="fu"><span class="eyebrow">Company President</span><h2>Patrick &ldquo;Pat&rdquo; Mackaronis</h2>
+<p>Pat Mackaronis formed Mack Construction in 2012 as a resident of Brooklyn, NY. The company started with smaller referred projects in Brooklyn and Queens, from warehouse renovations to private cement and concrete work.</p>
+<p>As it grew, so did the team: heavy equipment and civil contracts, including removing copper telephone cables from Manhattan sewers and renovating public parks and underground utilities. Today the company operates from a full-service yard and warehouse in Greenpoint, Brooklyn, employing mostly New Yorkers from Brooklyn and Queens.</p>
+<blockquote>Building stronger foundations for New York&rsquo;s future.</blockquote>
+<div class="sig">Pat@mackconstructioncorp.com</div>
+<div class="gtp">Pat also leads <b>Global Trading Partners</b>. <span class="demo">[Placeholder: short description and link to be supplied]</span></div></div></div></section>
+
+<section class="testi"><div class="wrap">
+<div class="shead fu"><div><span class="eyebrow">Client Words</span><h2>What partners say.</h2></div></div>
+<div class="tgrid">
+<div class="tq fu"><span class="tag">Placeholder</span><p>Client testimonial to be supplied by Mack Construction.</p><div class="sig">Client name, Company</div></div>
+<div class="tq fu"><span class="tag">Placeholder</span><p>Client testimonial to be supplied by Mack Construction.</p><div class="sig">Client name, Company</div></div>
+<div class="tq fu"><span class="tag">Placeholder</span><p>Client testimonial to be supplied by Mack Construction.</p><div class="sig">Client name, Company</div></div>
+</div></div></section>
+
+<section><div class="wrap area">
+<div class="fu"><span class="eyebrow">Service Area</span><h2>All five boroughs, and beyond.</h2><p style="color:#4a4b4a">Headquartered in Greenpoint, Brooklyn.</p>
+<ul><li>Brooklyn<span>HQ</span></li><li>Queens<span>NYC</span></li><li>Manhattan<span>NYC</span></li><li>The Bronx<span>NYC</span></li><li>Staten Island<span>NYC</span></li><li>New York State &amp; New Jersey<span>Regional</span></li></ul></div>
+<div class="ph fu"><img src="u2.jpg" alt=""></div></div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="fu"><span class="eyebrow">Connect With Us</span><h2>Start your next project.</h2>
+<div class="info">General enquiries<a href="mailto:info@mackconstructioncorp.com">info@mackconstructioncorp.com</a>President<a href="mailto:Pat@mackconstructioncorp.com">Pat@mackconstructioncorp.com</a>Phone<a>[Placeholder phone]</a>Licenses &amp; insurance<a>[Placeholder: to be supplied]</a></div></div>
+<form class="fu" onsubmit="event.preventDefault();this.querySelector('.demo').textContent='Thank you. (Demo form: nothing was sent.)'">
+<div><label>Name</label><input required></div><div><label>Company</label><input></div>
+<div><label>Email</label><input type="email" required></div><div><label>Phone</label><input></div>
+<div><label>Project type</label><select><option>Excavation &amp; Hauling</option><option>Heavy Equipment</option><option>Concrete Cutting &amp; Drilling</option><option>Civil &amp; Roadwork</option><option>General Labor</option><option>Recycling &amp; Removal</option></select></div>
+<div><label>Location</label><input placeholder="Borough or town"></div>
+<div class="f"><label>Project details</label><textarea rows="3"></textarea></div>
+<div class="f" style="display:flex;gap:24px;align-items:center;flex-wrap:wrap"><button class="btn">Request an Estimate &rarr;</button><span class="demo">Demo form for concept purposes.</span></div>
+</form></div></section>
+
+<footer><div class="wrap"><img class="logo" src="logo.jpg" alt=""><div>&copy; 2012 to 2026 Mack Construction Corp. Greenpoint, Brooklyn, NY</div><div>Concept by <b>DevXtech</b></div></div></footer>
+<script>
+const s=[...document.querySelectorAll('.hero .sl')];let i=0;setInterval(()=>{s[i].classList.remove('on');i=(i+1)%s.length;s[i].classList.add('on')},6000);
+addEventListener('scroll',()=>hd.classList.toggle('s',scrollY>40));
+const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.fu').forEach(e=>o.observe(e));
+</script></body></html>
